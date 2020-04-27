@@ -6,10 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".DriverMap">
 
-
-
-
-
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
@@ -21,5 +17,65 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Logout" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_button"
+        android:text ="Setting"
+        android:layout_gravity="right"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/riderInfo"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:id="@+id/riderProfileImage"
+            android:src="@mipmap/car_icon"
+            android:padding="20sp"/>
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="40sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/customerDestination"
+                android:paddingBottom="10sp"
+                android:text="Destination:"/>
+
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/riderName"
+                android:paddingBottom="10sp"
+                android:paddingTop="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/riderPhone"
+                android:paddingBottom="10sp"
+                android:paddingTop="20sp"/>
+
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    <Switch
+        android:id="@+id/work_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        android:layout_gravity="bottom|right"/>
 
 </FrameLayout>
